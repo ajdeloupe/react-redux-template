@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import './App.css';
+import toastr from 'toastr';
 import * as types from '../actions/actionTypes';
 
 class App extends React.Component {
@@ -19,6 +20,7 @@ class App extends React.Component {
   }
   render() {
     //const {prop1,prop2} = this.props;
+    
     return (
       <div onClick={this.handleClick}>
         {this.state.counter}
